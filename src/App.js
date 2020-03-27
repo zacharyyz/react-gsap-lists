@@ -47,12 +47,12 @@ function App() {
   }, []);
 
   useEffect(() => {
-    TweenLite.from(listRef.current, 0.4, {
+    TweenLite.from(listRef.current, 0.5, {
       opacity: 0,
-      y: 20,
+      y: 100,
+      scale: 0.9,
       stagger: 0.05,
-      ease: Power3.easeOut,
-      delay: 0.4
+      ease: Power3.easeOut
     });
   }, [loading]);
 
